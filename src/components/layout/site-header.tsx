@@ -28,6 +28,7 @@ export function SiteHeader() {
         borderBottom: "1px solid",
         borderColor: "divider",
         backdropFilter: "blur(18px)",
+        px: { xs: 0, md: 1 },
       }}
     >
       <Box sx={{ position: "relative", zIndex: 1 }}>
