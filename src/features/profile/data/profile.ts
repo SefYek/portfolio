@@ -10,7 +10,7 @@ export const navItems = [
 export const profile: Profile = {
   name: "AmirHossein Mohammadi",
   role: "Front End Developer",
-  email: "codesefyek@gmail.com",
+  email: "codeSefYek@gmail.com",
   phone: "+98 901-426-0208",
   summary:
     "I build clean, responsive, and scalable web interfaces with a focus on thoughtful user experience and polished implementation.",
