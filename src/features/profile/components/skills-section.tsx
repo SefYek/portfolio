@@ -32,7 +32,6 @@ export function SkillsSection() {
             flexWrap: "wrap",
             gap: 1.5,
             maxWidth: 350,
-            border: 1,
             borderColor: "divider",
             p: 1,
           }}
