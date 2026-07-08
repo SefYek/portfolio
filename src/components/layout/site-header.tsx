@@ -39,7 +39,7 @@ export function SiteHeader() {
             minHeight: { xs: 68, sm: 72 },
             gap: 2,
             justifyContent: "space-between",
-            px: { xs: 2, md: 5 },
+            px: { xs: 1, md: 5 },
           }}
         >
           <Typography
@@ -85,7 +85,7 @@ export function SiteHeader() {
                   py: 0.75,
                   borderRadius: 999,
                   color: "text.secondary",
-                  fontSize: 14,
+                  fontSize: { xs: 12, md: 14 },
                   whiteSpace: "nowrap",
                   transition: "all 0.25s ease",
                   "&:hover": {
