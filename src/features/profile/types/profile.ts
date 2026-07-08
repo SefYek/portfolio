@@ -3,6 +3,7 @@ export type ProfileProject = {
   company: string;
   type: string;
   year: string;
+  status: string;
   description: string;
 };
 

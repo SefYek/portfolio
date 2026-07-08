@@ -6,7 +6,7 @@ export default function Home() {
     <Box
       sx={{
         minHeight: "100vh",
-        p: { xs: 1.25, md: 3 },
+        p: { xs: 0, md: 3 },
       }}
     >
       <Box
@@ -14,7 +14,7 @@ export default function Home() {
           minHeight: "calc(100vh - 32px)",
           overflow: "clip",
           position: "relative",
-          borderRadius: { xs: 3, md: 5 },
+          borderRadius: { xs: "none", md: 5 },
           borderColor: "divider",
           boxShadow: "0px 0px 15px 1px rgba(15, 23, 42, .5)",
           background:

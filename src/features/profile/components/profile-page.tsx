@@ -14,7 +14,7 @@ export function ProfilePage() {
       <Box
         component="main"
         sx={{
-          px: 5,
+          px: { xs: 2, md: 5 },
         }}
       >
         <HeroSection />

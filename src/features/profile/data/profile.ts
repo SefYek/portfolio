@@ -85,7 +85,8 @@ export const profile: Profile = {
       title: "Full-Time Front-End Developer",
       company: "CRoom",
       type: "Current Role",
-      year: "06/2025 - Present --> 1 year",
+      year: "06/2025 - Present",
+      status: "",
       description:
         "Currently working full-time as a front-end developer, contributing to production interfaces and improving real-world application features.",
     },
@@ -93,7 +94,8 @@ export const profile: Profile = {
       title: "Full Front-End Company Management Platform",
       company: "Persino",
       type: "Front-End Project at Azhman",
-      year: "01/2025 - 05/2025 --> 6 months",
+      year: "01/2025 - 05/2025",
+      status: " 6 months",
       description:
         "Designed the UI/UX and built the full front-end independently for a company management platform. The product had a separate back-end, while my responsibility was the complete client-side experience, including monitoring views and React Flow based interfaces.",
     },
@@ -102,7 +104,8 @@ export const profile: Profile = {
       title: "Front-End Internship",
       company: "FewTech",
       type: "Internship",
-      year: "07/2024 - 12/2024 -->6 months",
+      year: "07/2024 - 12/2024 ",
+      status: "6 months",
       description:
         "Continued front-end training in a company environment, focusing on responsive UI development, cleaner implementation, and practical React patterns.",
     },
@@ -110,7 +113,8 @@ export const profile: Profile = {
       title: "Front-End Internship",
       company: "BioArk",
       type: "Internship",
-      year: "01/2024 - 06/2024 --> 6 months",
+      year: "01/2024 - 06/2024",
+      status: " 6 months",
       description:
         "Worked as a front-end intern, practiced real project workflows, improved component-building skills, and gained experience collaborating inside a software team.",
     },

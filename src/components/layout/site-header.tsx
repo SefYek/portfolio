@@ -22,13 +22,12 @@ export function SiteHeader() {
         width: "100%",
         background:
           "linear-gradient(135deg, rgba(19, 119, 220, 0.09), rgba(236,240,247,0.78) 42%, rgba(255,255,255,0.92))",
-
         color: "text.primary",
         border: "none",
         borderBottom: "1px solid",
         borderColor: "divider",
         backdropFilter: "blur(18px)",
-        px: { xs: 0, md: 1 },
+        px: 1,
       }}
     >
       <Box sx={{ position: "relative", zIndex: 1 }}>

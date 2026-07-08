@@ -36,7 +36,17 @@ export function ProjectsSection() {
             <Typography
               sx={{ color: "secondary.main", fontSize: 14, fontWeight: 800 }}
             >
-              {project.type} / {project.year}
+              {project.type}
+            </Typography>
+            <Typography
+              sx={{ color: "secondary.main", fontSize: 14, fontWeight: 800 }}
+            >
+              {project.year}
+            </Typography>
+            <Typography
+              sx={{ color: "secondary.main", fontSize: 14, fontWeight: 800 }}
+            >
+              {project.status}
             </Typography>
             <Typography
               component="h3"

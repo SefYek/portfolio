@@ -25,13 +25,12 @@ export function SkillsSection() {
           alignItems: "flex-start",
         }}
       >
-        {/* Skills list */}
         <Box
           sx={{
             display: "flex",
             flexWrap: "wrap",
             gap: 1.5,
-            maxWidth: 350,
+            maxWidth: { xs: "auto", md: 350 },
             borderColor: "divider",
             p: 1,
           }}
@@ -50,11 +49,15 @@ export function SkillsSection() {
                 color: "text.secondary",
                 fontWeight: 800,
                 px: 1.5,
-                transition: "0.2s ease",
+                transform: "translateY(0) scale(1)",
+                transition:
+                  "transform 0.3s ease, box-shadow 0.3s ease , scale .5s ease , background-color 0.1s ease",
+                boxShadow: "0 0 3px 1px black",
                 "&:hover": {
                   bgcolor: "primary.main",
+                  boxShadow: "0 2px 15px 5px #2d2d2d66",
+                  transform: "translateY(-4px) scale(1.07)",
                   color: "primary.contrastText",
-                  transform: "translateY(-1px)",
                   cursor: "pointer",
                 },
               }}
@@ -62,9 +65,9 @@ export function SkillsSection() {
           ))}
         </Box>
 
-        {/* Detail box */}
         <Box
           sx={{
+            display: { xs: "none", md: "block" },
             mt: 0,
             p: 2,
             minHeight: 80,

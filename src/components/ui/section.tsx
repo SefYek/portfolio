@@ -11,7 +11,11 @@ type SectionProps = {
 
 export function Section({ id, eyebrow, title, children }: SectionProps) {
   return (
-    <Box component="section" id={id} sx={{ scrollMarginTop: 96, py: { xs: 6, md: 8 } }}>
+    <Box
+      component="section"
+      id={id}
+      sx={{ scrollMarginTop: 20, py: { xs: 6, md: 8 } }}
+    >
       <Box
         sx={{
           mb: 4,
@@ -23,23 +27,23 @@ export function Section({ id, eyebrow, title, children }: SectionProps) {
         }}
       >
         <Box>
-        <Typography
-          sx={{ color: "secondary.main", fontSize: 14, fontWeight: 800 }}
-        >
-          {eyebrow}
-        </Typography>
-        <Typography
-          component="h2"
-          sx={{
-            mt: 1,
-            color: "text.primary",
-            fontSize: { xs: 28, sm: 34 },
-            fontWeight: 900,
-            lineHeight: 1.25,
-          }}
-        >
-          {title}
-        </Typography>
+          <Typography
+            sx={{ color: "secondary.main", fontSize: 16, fontWeight: 800 }}
+          >
+            {eyebrow}
+          </Typography>
+          <Typography
+            component="h2"
+            sx={{
+              mt: 1,
+              color: "text.primary",
+              fontSize: { xs: 28, sm: 34 },
+              fontWeight: 900,
+              lineHeight: 1.25,
+            }}
+          >
+            {title}
+          </Typography>
         </Box>
         <Box
           sx={{
