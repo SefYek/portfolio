@@ -55,7 +55,7 @@ export function SkillsSection() {
                 boxShadow: "0 0 1px 1px black",
                 "&:hover": {
                   bgcolor: "primary.main",
-                  boxShadow: "0 10px 10px 5px #2d2d2d66",
+                  boxShadow: "0 10px 10px 5px #37373766",
                   transform: "translateY(-4px) scale(1.07)",
                   color: "primary.contrastText",
                   cursor: "pointer",
