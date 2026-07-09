@@ -139,7 +139,7 @@ body {
 .mesh-shell::after {
   background:
     radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.55), transparent 30%),
-    linear-gradient(115deg, transparent 22%, rgba(255, 255, 255, 0.2), transparent 50%);
+    linear-gradient(115deg, transparent 22%, rgba(255, 255, 255, 0.2), transparent 40%);
   mix-blend-mode: screen;
   opacity: 0.70;
   animation: mesh-glow 70s ease infinite;
