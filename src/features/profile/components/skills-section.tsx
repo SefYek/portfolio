@@ -44,7 +44,7 @@ export function SkillsSection() {
               onMouseLeave={() => setSelectedSkill(null)}
               sx={{
                 minHeight: 44,
-                bgcolor: "rgba(255,255,255,0.72)",
+                bgcolor: "rgb(255, 255, 255)",
                 borderColor: "divider",
                 color: "text.secondary",
                 fontWeight: 800,
@@ -52,7 +52,7 @@ export function SkillsSection() {
                 transform: "translateY(0) scale(1)",
                 transition:
                   "transform 0.3s ease, box-shadow 0.3s ease , scale .5s ease , background-color 0.1s ease",
-                boxShadow: "0 0 1px 1px black",
+
                 "&:hover": {
                   bgcolor: "primary.main",
                   boxShadow: "0 10px 10px 5px #37373766",
