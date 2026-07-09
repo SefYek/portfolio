@@ -196,7 +196,7 @@ body {
   radial-gradient(circle at 100% 100%, rgba(1, 43, 105, 0.22), transparent 20%),
   radial-gradient(circle at 100% 100%, rgba(63, 191, 176, 0.067), transparent 10%);
   filter: blur(100px) saturate(2);
-  animation: mesh-drift 15s linear infinite;
+  animation: mesh-drift 20s linear infinite;
 
 }
 .mesh-shell::after {
@@ -205,7 +205,7 @@ body {
     linear-gradient(115deg, transparent 22%, rgba(255, 255, 255, 0.2), transparent 10%);
   mix-blend-mode: screen;
   opacity: 0.70;
-  animation: mesh-drift 15s linear infinite;
+  animation: mesh-drift 20s linear infinite;
 
 }
 }
