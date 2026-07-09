@@ -52,10 +52,10 @@ export function SkillsSection() {
                 transform: "translateY(0) scale(1)",
                 transition:
                   "transform 0.3s ease, box-shadow 0.3s ease , scale .5s ease , background-color 0.1s ease",
-                boxShadow: "0 0 3px 1px black",
+                boxShadow: "0 0 1px 1px black",
                 "&:hover": {
                   bgcolor: "primary.main",
-                  boxShadow: "0 2px 15px 5px #2d2d2d66",
+                  boxShadow: "0 10px 10px 5px #2d2d2d66",
                   transform: "translateY(-4px) scale(1.07)",
                   color: "primary.contrastText",
                   cursor: "pointer",
