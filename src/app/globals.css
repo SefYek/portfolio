@@ -185,3 +185,16 @@ body {
     animation: none;
   }
 }
+
+
+
+@media (max-width: 600px) {
+.mesh-shell::before {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(95, 152, 238, 0.62), transparent 10%),
+    radial-gradient(circle at 84% 12%, rgba(63, 191, 175, 0.34), transparent 10%),
+    radial-gradient(circle at 76% 72%, rgba(1, 43, 105, 0.28), transparent 10%),
+    radial-gradient(circle at 20% 82%, rgba(63, 191, 175, 0.34), transparent 10%);
+
+}
+}
