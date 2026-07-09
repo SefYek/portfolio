@@ -10,6 +10,7 @@ export default function Home() {
       }}
     >
       <Box
+        className="mesh-shell"
         sx={{
           minHeight: "calc(100vh - 32px)",
           overflow: "clip",
@@ -18,18 +19,12 @@ export default function Home() {
           borderColor: "divider",
           boxShadow: "0px 0px 15px 1px rgba(15, 23, 42, .5)",
           background:
-            "linear-gradient(135deg, rgba(255,255,255,0.92), rgba(236,240,247,0.78) 42%, rgba(19, 119, 220, 0.56))",
-          "&::before": {
-            content: '""',
-            position: "absolute",
-            inset: 0,
-            pointerEvents: "none",
-            background:
-              "radial-gradient(circle at 12% 18%, rgba(19, 119, 220, 0.49), transparent 30%), radial-gradient(circle at 82% 8%, rgba(23,23,23,0.08), transparent 26%)",
-          },
+            "linear-gradient(135deg, rgba(255,255,255,0.88), rgba(236,240,247,0.72) 42%, rgba(95, 152, 238, 0.42))",
         }}
       >
-        <ProfilePage />
+        <Box sx={{ position: "relative", zIndex: 1 }}>
+          <ProfilePage />
+        </Box>
       </Box>
     </Box>
   );

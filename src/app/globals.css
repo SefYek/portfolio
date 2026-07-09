@@ -115,3 +115,73 @@ body {
   margin: 0;
   font-family: var(--font-site);
 }
+
+.mesh-shell::before,
+.mesh-shell::after {
+  content: "";
+  position: absolute;
+  inset: -25%;
+  pointer-events: none;
+}
+
+.mesh-shell::before {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(95, 152, 238, 0.62), transparent 30%),
+    radial-gradient(circle at 84% 12%, rgba(63, 191, 175, 0.34), transparent 30%),
+    radial-gradient(circle at 76% 72%, rgba(1, 43, 105, 0.28), transparent 30%),
+    radial-gradient(circle at 20% 82%, rgba(63, 191, 175, 0.34), transparent 30%);
+  filter: blur(100px) saturate(1.5);
+  opacity: 0.9;
+  transform: translate3d(0, 0, 0) scale(1.05);
+  animation: mesh-drift 50s ease infinite;
+}
+
+.mesh-shell::after {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.55), transparent 22%),
+    linear-gradient(115deg, transparent 22%, rgba(255, 255, 255, 0.2), transparent 56%);
+  mix-blend-mode: screen;
+  opacity: 0.55;
+  animation: mesh-glow 50s ease infinite;
+}
+
+@keyframes mesh-drift {
+
+  0% {
+    transform:
+      scale(1)
+      rotate(0deg);
+  }
+
+  50% {
+    transform:
+      scale(1.5)
+      rotate(180deg);
+  }
+
+  100% {
+    transform:
+      scale(.7)
+      rotate(360deg);
+  }
+
+}
+
+@keyframes mesh-glow {
+  from {
+    transform: translate3d(3%, -2%, 0) scale(1);
+    opacity: .45;
+  }
+
+  to {
+    transform: translate3d(-3%, 2%, 0) scale(1.08);
+    opacity: 0.72;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mesh-shell::before,
+  .mesh-shell::after {
+    animation: none;
+  }
+}
